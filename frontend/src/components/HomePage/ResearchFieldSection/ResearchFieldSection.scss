@@ -1,0 +1,200 @@
+.research-field-wrapper {
+    width: 100%;
+    padding: 16px 16px;
+    max-width: 1280px;
+    max-height: fit-content;
+    justify-self: center;
+    min-width: 0;
+}
+
+.research-field {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.research-field-header {
+
+    text-align: center;
+
+    margin-bottom: 28px;
+
+    h2 {
+
+        font-size: var(--text-2xml);
+        font-weight: 700;
+        color: var(--header-footer-bg)
+    }
+
+}
+
+.research-field-filter {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+
+}
+
+.research-field-tabs {
+    width: 80%;
+
+    display: grid;
+
+    grid-template-columns: repeat(9, max-content);
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border-low-gray);
+
+    button {
+
+        background: none;
+
+        border: none;
+
+        cursor: pointer;
+
+        font-size: var(--text-md);
+        font-weight: 600;
+
+        padding-bottom: 8px;
+
+        color: var(--header-footer-bg);
+    }
+
+    .active {
+
+        color: #0d2c5a;
+
+        box-shadow: 0 2px 0 0 #0d2c5a;
+
+    }
+
+}
+
+.view-all {
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    color: #0d2c5a;
+
+    font-weight: 600;
+
+}
+
+.research-slider-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.slider-btn {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid #ddd;
+
+    background: white;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+}
+
+.research-slider {
+
+    align-self: center;
+
+    overflow: auto;
+
+    padding: 0 24px;
+
+    .inside {
+
+        display: flex;
+
+        overflow: auto;
+
+        scroll-behavior: smooth;
+
+        gap: 8px;
+    }
+
+
+}
+
+.research-slider::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.research-book {
+
+    width: 180px;
+
+    flex-shrink: 0;
+
+}
+
+.research-book-image {
+
+    width: 160px;
+
+    height: 220px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background: #ececec;
+
+    margin-bottom: 14px;
+
+    img {
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+    }
+
+}
+
+.research-book {
+
+    h3 {
+
+        font-size: var(--text-md);
+
+        line-height: 1.5;
+
+        margin-bottom: 6px;
+
+    }
+
+    span {
+
+        color: #666;
+
+        font-size: 14px;
+
+    }
+
+}

@@ -1,0 +1,54 @@
+
+:root {
+
+    --text-lm : 11px;
+    --text-sm : 12px;
+    --text-md: 13px;
+    --text-lg: 15px;
+    --text-xl: 18px;
+    --text-2xml : 22px;
+    --text-2xl: 32px;
+    --text-3xl: 48px;
+    --text-4xl: 64px;
+    --text-5xl: 78px;
+    --text-6xl: 92px;
+    --text-7xl: 108px;
+}
+
+.main-layout {
+
+    
+    --header-footer-bg : rgb(3, 24, 54);
+
+    --primary-text-color : #fff;
+    --secondary-text-color : #c9c9c9;
+    --third-text-color : rgb(34, 34, 34);
+
+    --border-low-gray : rgb(241, 241, 241);
+    --border-low-gray-blur : rgba(241, 241, 241, 0.3);
+
+    --logo-color : rgb(192, 125, 0);
+
+    min-height: 100vh;
+
+    // font-family: 'Times New Roman', Times, serif;
+    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Inter", sans-serif;
+
+    main {
+        position: relative;
+        display: grid;
+    }
+}
+
+@media (max-width : 1200px) {
+    :root {
+        --text-lm : 9px;
+        --text-sm : 11px;
+        --text-md: 13px;
+        --text-lg: 16px;
+        --text-xl: 18px;
+        --text-2xl: 26px;
+        --text-3xl: 39px;
+    }
+}

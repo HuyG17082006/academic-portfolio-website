@@ -1,0 +1,36 @@
+.overview-section {
+    max-width: 1280px;
+    width: 100%;
+    justify-self: center;
+
+}
+
+.overview-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    &>* {
+        &:first-child {
+            border: none;
+
+            .overview-border {
+                border: none;
+            }
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .overview-border {
+        align-self: center;
+        height: 60%;
+        width: 1px;
+        border : 1px solid var(--border-low-gray);
+    }
+}

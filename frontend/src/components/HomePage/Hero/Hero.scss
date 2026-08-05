@@ -1,0 +1,128 @@
+.hero-wrapper {
+    background: #ddd;
+}
+
+.hero {
+
+    position: relative;
+
+    width: 100%;
+    max-width: 1280px;
+
+    aspect-ratio: 100 / 37;
+
+    justify-self: center;
+
+    overflow: hidden;
+
+    .hero-background {
+
+        position: absolute;
+
+        inset: 0;
+
+        background: url(../../../../public/ts.png) center / cover no-repeat;
+
+    }
+
+    .hero-overlay {
+
+        position: relative;
+
+        width: 60%;
+
+        height: 100%;
+
+        border-radius: 20px;
+
+        margin-left: 32px;
+        margin-top : 32px;
+
+        background: rgba(255, 255, 255, .2);
+
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+
+        display: flex;
+        flex-direction: column;
+
+        align-self: center;
+
+        h1 {
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: var(--text-7xl);
+
+            font-weight: 500;
+
+            line-height: 1.2;
+
+            letter-spacing: -0.04em;
+
+            word-break: break-word;
+
+            color: var(--header-footer-bg);;
+
+        }
+
+        .hero-info {
+            padding: 4px;
+            padding-top: 16px;
+            line-height: 1.4;
+            width: 70%;
+
+            display: grid;
+            grid-template-rows: fit-content fit-content fit-content;
+            gap: 24px;
+
+            .hero-role {
+                display: flex;
+                flex-direction: column;
+            }
+
+            span,
+            p {
+                font-size: var(--text-xl);
+            }
+
+            .hero-actions {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+
+                button {
+                    width: fit-content;
+                    padding: 8px 24px;
+                    height: 48px;
+                    font-size: 16px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap : 12px;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &.b1 {
+                        background: var(--header-footer-bg);
+                        color : #fff;
+                    }
+    
+                    &.b2 {
+                        background-color: #fff;
+                        border : 2px solid var(--logo-color);
+                        color : var(--logo-color)
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
